@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Class Resources Hub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="Logo.png">
+
+    <link rel="stylesheet" href="contact-styles.css">
+    <link rel="stylesheet" href="mobile-nav.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo-container" onclick="scrollToHome()">
+                <div class="logo-image">🎓</div>
+                <div class="logo-text">ClassHub</div>
+            </div>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.php">Home</a></li>
+                <li class="nav-item dropdown" id="lecturesDropdown">
+                    <a href="#lectures" class="dropdown-toggle">
+                        Lectures
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="first.php">First Year</a>
+                        <a href="second.php">Second Year</a>
+                        <a href="previous-semesters.php">Previous Semesters</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="programming.php">Programming</a></li>
+                <li class="nav-item"><a href="communities.php">Communities</a></li>
+                <li class="nav-item"><a href="schedule.php">Schedule</a></li>
+                <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1 class="hero-title">📬 Get In Touch</h1>
+        <p class="hero-subtitle">Join our community and stay connected</p>
+    </section>
+
+    <div class="content-container">
+        <div class="contact-wrapper">
+            
+            <div class="whatsapp-card">
+                <div class="card-icon">💬</div>
+                <h3 class="card-title">Join WhatsApp Group</h3>
+                <p class="card-description">Connect with classmates, share resources, and stay updated with the latest announcements</p>
+                <a href="https://chat.whatsapp.com/IdDaqDZNSZQ3YF375tYBHU" target="_blank" class="whatsapp-btn">
+                    <span class="btn-icon">📱</span>
+                    Join Now
+                </a>
+            </div>
+
+            <div class="contact-form-card">
+                <div class="form-header">
+                    <div class="form-icon">✉️</div>
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <p class="form-subtitle">Fill out the form below and we'll get back to you soon</p>
+                </div>
+
+                <form class="contact-form" action="https://api.sheetmonkey.io/form/nDCuG8kgzbs5K99UFEQrFx" method="POST">
+                    
+                    <input type="hidden" name="x-sheetmonkey-redirect" value="http://faris-22.free.nf/contact.html">
+                    <input type="hidden" name="_append" value="false">
+
+                    <div class="form-group">
+                        <label for="name">
+                            <span class="label-icon">👤</span>
+                            Full Name
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            <span class="label-icon">📞</span>
+                            Phone Number
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">
+                            <span class="label-icon">🎓</span>
+                            Academic Year
+                        </label>
+                        <select id="year" name="year" required>
+                            <option value="" disabled selected>Select your year</option>
+                            <option value="first">First Year</option>
+                            <option value="second">Second Year</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId">
+                            <span class="label-icon">🆔</span>
+                            Student ID
+                        </label>
+                        <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <span class="label-icon">💭</span>
+                            Message
+                        </label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-icon">📤</span>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <h3>ClassHub</h3>
+                <p>Computer Science College Class Hub</p>
+                <p class="footer-developer">Developed by - Faris Nabil</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.php">Home</a>
+                    <div class="footer-dropdown" id="footerLecturesDropdown">
+                        <a href="#lectures" class="footer-dropdown-toggle">
+                            Lectures
+                            <span class="footer-dropdown-arrow">▼</span>
+                        </a>
+                        <div class="footer-dropdown-menu">
+                            <a href="first.php">First Year</a>
+                            <a href="second.php">Second Year</a>
+                            <a href="previous-semesters.php">Previous Semesters</a>
+                        </div>
+                    </div>
+                    <a href="programming.php">Programming</a>
+                    <a href="communities.php">Communities</a>
+                    <a href="schedule.php">Schedule</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Join Us</h3>
+                <a href="https://chat.whatsapp.com/IdDaqDZNSZQ3YF375tYBHU" class="whatsapp-link" target="_blank">
+                    <span class="whatsapp-icon">💬</span>
+                    WhatsApp Group
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            © 2026 ClassHub. Built with ❤️ for students, by students.
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" id="scrollToTop">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </div>
+
+    <script>
+        // Scroll to home when logo is clicked
+        function scrollToHome() {
+            window.location.href = 'index.php';
+        }
+
+        // Dropdown menu functionality (Navigation)
+        const lecturesDropdown = document.getElementById('lecturesDropdown');
+        const dropdownToggle = lecturesDropdown.querySelector('.dropdown-toggle');
+        
+        dropdownToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            lecturesDropdown.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!lecturesDropdown.contains(e.target)) {
+                lecturesDropdown.classList.remove('active');
+            }
+        });
+
+        // Footer dropdown functionality
+        const footerLecturesDropdown = document.getElementById('footerLecturesDropdown');
+        const footerDropdownToggle = footerLecturesDropdown.querySelector('.footer-dropdown-toggle');
+        
+        footerDropdownToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            footerLecturesDropdown.classList.toggle('active');
+        });
+
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // تمت إزالة كود JS الخاص بمنع الإرسال (e.preventDefault) لكي يعمل الفورم الحقيقي
+    </script>
+    <script src="mobile-nav.js"></script>
+</body>
+</html>
