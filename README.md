@@ -1,5 +1,5 @@
 # Class-Hub
-managing university lectures and schedules
+managing university lectures and schedules(Created with Vibe Coding)
 # 🎓 ClassHub - University Resource Management System
 
 **ClassHub** is a comprehensive educational platform designed for Computer Science students to organize academic materials, lectures, and schedules efficiently.
@@ -28,9 +28,15 @@ managing university lectures and schedules
 <img width="1868" height="846" alt="image" src="https://github.com/user-attachments/assets/340be89a-b358-4ca6-9e68-ea00902b4f1e" />
 <img width="770" height="759" alt="image" src="https://github.com/user-attachments/assets/ed7c9269-259c-4204-998f-7f42b6c15941" />
 <img width="1909" height="863" alt="image" src="https://github.com/user-attachments/assets/f326a948-2e24-4024-892c-af0cec1df06f" />
+<img width="1897" height="865" alt="image" src="https://github.com/user-attachments/assets/faabf1d7-bae3-4b0d-bf59-e03a00244eb9" />
+<img width="1886" height="860" alt="image" src="https://github.com/user-attachments/assets/501388fc-7fbf-498c-bc29-a0b9af7baf20" />
 
+
+## 🌐 Live Demo
+You can explore the live version of the project here: [faris-22.free.nf](http://faris-22.free.nf/index.php)
 
 ## 🔧 Installation & Setup
-1. Clone the repository.
-2. Import the `.sql` database file into your local server (e.g., XAMPP).
-3. Configure your database credentials in `config.php`.
+1. Clone the repository to your local machine.
+2. Upload the files to your hosting server (e.g., InfinityFree via FTP).
+3. Import the provided `.sql` file into your **MySQL** database via phpMyAdmin.
+4. Update your database connection strings in the configuration file to match your hosting environment credentials.
